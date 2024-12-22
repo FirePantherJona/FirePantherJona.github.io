@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Schon wieder Richtig!</h1>
+    <h2>Jetz wird es aber schwieriger, denn die nächste Challenge ist:</h2>
+    Ich bin schwarz, rund und fahre im Haus herum. 
+    Bei mir findest du einen Zettel mit weiteren Hinweisen für die Challenge. <br><br>
+    <b>Der Lösungssatz:</b>
+    <input type="text" id="text" autocomplete="off"> <button onclick="start()">Betätigen</button>
+    <script>
+        function start(){
+            if (document.getElementById("text").value=="Mama sollte mich benutzen") {
+                window.open("4challenge.html","_self")
+            }
+            else{
+                document.getElementById("text").value=""
+            }
+        }
+    </script>
+</body>
+</html>
