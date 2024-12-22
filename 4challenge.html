@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Challenge</title>
+    <style>
+        img{
+            width: 150px;
+        }
+        span{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <img src="Katzi0.jpg" alt=""><span>Miau</span>  <br>
+    <img src="Katzi1.jpg" alt=""><img src="Katzi2.jpg" alt=""><br>
+    <img src="Katzi3.jpg" alt=""><img src="Katzi4.jpg" alt=""><br>
+    Diese guten alten Tage. Ich sollte dir eigentlich 
+    einen Zettel mit der Lösung dieser Challenge geben, 
+    Jedoch habe ich ihn bei meinem letzten Ausflugsziel verloren. 
+    Du kannst ihn von dort aus abholen. <br><br>
+    <b>Die Lösung:</b><br>
+    <input type="text" id="text" autocomplete="off"> <button onclick="start()">Betätigen</button>
+    <script>
+        function start(){
+            if (document.getElementById("text").value=="Miaaau!") {
+                window.open("5challenge.html","_self")
+            }
+            else{
+                document.getElementById("text").value=""
+            }
+        }
+    </script>
+</body>
+</html>

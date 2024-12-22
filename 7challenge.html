@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Challenge</title>
+    <style>
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Challenge 7</h1>
+    <b>Welche Nummer steht auf dieser Kugel?</b><br>
+    <img src="Billardkugel.jpg" alt=""><br><br>
+    <b>Die Lösung ist:</b><br>
+    <input type="number" id="text" autocomplete="off"> <button onclick="start()">Betätigen</button>
+    <script>
+        function start(){
+            if (document.getElementById("text").value=="27") {
+                window.open("8challenge.html","_self")
+            }
+            else{
+                document.getElementById("text").value=""
+            }
+        }
+    </script>
+
+</body>
+</html>

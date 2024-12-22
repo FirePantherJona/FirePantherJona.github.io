@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Challenge</title>
+</head>
+<body>
+    <h1>Nächste Challenge:</h1>
+    Es brennt, es brennt ein Lichterlein. Leider ist es ganz allein.
+    Es wurde oft benutzt, ohne dass ihrs wusstst. Es leuchtete die meiste Zeit
+    wenn es schon dunkel war, damit ich noch was sah. Dort ihr findet ein Zettelchen,
+    mit etwas drauf was wichtig scheint. <br><br>
+    <b>Lösungswort:</b><br>
+    <input type="text" id="text" autocomplete="off"> <button onclick="start()">Betätigen</button>
+    <script>
+        function start(){
+            if (document.getElementById("text").value=="Top Secret") {
+                window.open("6challenge.html","_self")
+            }
+            else{
+                document.getElementById("text").value=""
+            }
+        }
+    </script>
+</body>
+</html>
