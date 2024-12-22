@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Challenge</title>
+    <style>
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Richtig!</h1>
+    <b>Jetzt die zweite Challenge:</b> <br>
+    Wo ist das: <br>
+    <img src="Tischerl.jpg" alt=""><br>
+    Dort findest du einen Zettel mit einer <br>
+    Number darauf. <br><br>
+    <b>Was ist die Number?</b> <br>
+    <input type="number" id="text" autocomplete="off"> <button onclick="start()">Betätigen</button>
+    <script>
+        function start(){
+            if (document.getElementById("text").value==762893) {
+                window.open("3challenge.html","_self")
+            }
+            else{
+                document.getElementById("text").value=""
+            }
+        }
+    </script>
+</body>
+</html>
